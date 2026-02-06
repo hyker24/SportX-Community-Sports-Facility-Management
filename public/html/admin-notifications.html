@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Admin Notifications</title>
+        <link rel="stylesheet" href="../styles/admin-notifications-styles.css">
+        <script src="../js/admin-notifications.js" type="module"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Admin Management Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><button onclick="window.location.href='../html/admin.html'">Home</button></li>
+                    <li><button onclick="window.location.href='../html/admin-bookings.html'">Bookings</button></li>
+                    <li><button onclick="window.location.href='../html/admin-events.html'">Events</button></li>
+                    <li><button onclick="window.location.href='/html/admin-analytics.html'">Analytics</button></li>
+                    <li><button onclick="window.location.href='../html/admin-notifications.html'">Notifications</button></li>
+                    <li><button id="sign-out-button" class="auth-button">Sign out</button></il>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section aria-label="assign-role-notification-section" class="assign-role-notification-section">
+                <h2>ROLE ASSIGNMENT NOTIFICATIONS</h2>
+                <ul class="notification-list" id="notification-role-list">
+            
+                </ul>
+            </section>
+
+            <section aria-label="new-booking-notification-section" class="new-booking-notification-section">
+                <h2>NEW BOOKINGS NOTIFICATIONS</h2>
+                <ul class="notification-list" id="notification-bookings-list">
+                    
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>

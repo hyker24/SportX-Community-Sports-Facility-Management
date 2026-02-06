@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Staff Notifications</title>
+        <link rel="stylesheet" href="../styles/admin-notifications-styles.css">
+        <script src="../js/staff-notifications.js" type="module"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>STAFF NOTIFICATION DASHBOARD</h1>
+            <nav>
+                <ul>
+                    <li><button onclick="window.location.href='../html/facilityStaffPage.html'">Home</button></li>
+                    <li><button onclick="window.location.href='../html/staff-notification.html'">Notifications</button></li>
+                     <li><button id="sign-out-button" class="auth-button">Sign out</button></il>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section aria-label="assign-role-notification-section" class="assign-role-notification-section">
+                <h2>EVENTS NOTIFICATIONS</h2>
+                <ul class="notification-list" id="notification-events-list">
+                </ul>
+            </section>
+
+            <section aria-label="new-booking-notification-section" class="new-booking-notification-section">
+                <h2>NEW REPORT NOTIFICATIONS</h2>
+                <ul class="notification-list" id="notification-reports-list">
+                    
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>

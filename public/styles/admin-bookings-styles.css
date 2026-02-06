@@ -1,0 +1,164 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #cfd2d7;
+color: #0e2a55;
+line-height: 1.6;
+overflow-x: hidden;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #0E2A55;
+color: white;
+padding: 40px 20px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+font-size: 2rem;
+font-weight: 500;
+color: #e6ecf2;
+}
+
+header nav ul {
+list-style: none;
+display: flex;
+gap: 1rem;
+}
+
+header nav ul li button {
+background-color: transparent;
+border: 1px solid #7CB342;
+color: white;
+padding: 0.5rem 1rem;
+border-radius: 4px;
+cursor: pointer;
+transition: background 0.3s ease;
+}
+
+header nav ul li button:hover {
+background-color: #4a6d24;
+color: white;
+}
+
+main {
+    margin: 0;
+    padding: 2rem;
+    padding-top: 80px;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.search-bookings-section {
+    margin-bottom: 2rem;
+}
+
+#search-bookings-form {
+    display: flex;
+    gap: 1rem;
+}
+
+input[type="search"] {
+    padding: 0.75rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    padding: 0.75rem;
+    background-color: #F57C00;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+button[type="submit"]:hover {
+    background-color: #e65100;
+}
+
+section > h2 {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    color: 000000;
+}
+
+article {
+    background-color: var(--light);
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    overflow-x: auto;
+    max-height: 400px;
+    margin-bottom: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+thead {
+    background-color: #0e2a55;
+    color: white;
+}
+
+th, td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.approve-booking {
+    background-color: #75dd06;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.approve-booking:hover {
+    background-color: #72c718;
+    color:white;
+
+}
+
+.deny-booking {
+    background-color: #d42c19;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.deny-booking:hover {
+    background-color: #b32313;
+    color: white;
+}
+
+article::-webkit-scrollbar {
+    width: 10px;
+}
+
+article::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+article::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 6px;
+}

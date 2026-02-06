@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Resident Notifications</title>
+        <link rel="stylesheet" href="../styles/admin-notifications-styles.css">
+        <script src="../js/resident-notifications.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Resident Management Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><button onclick="window.location.href='../html/bookingPage.html'">Home</button></li>
+                    <li><button onclick="window.location.href='../html/residentViewEvents.html'">Events</button></li>
+                    <li><button onclick="window.location.href='../html/myBookings.html'">My Bookings</button></li>
+                    <li><button onclick="window.location.href='../html/reports.html'">Maintenance Report</button></li>
+                    <li><button onclick="window.location.href='../html/resident-notification.html'">Notifications</button></li>
+                     <li><button id="sign-out-button" class="auth-button">Sign out</button></il>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section aria-label="new-booking-notification-section" class="new-booking-notification-section">
+                <h2>EVENT NOTIFICATIONS</h2>
+                <ul class="notification-list" id="notification-events-list">
+                    
+                </ul>
+            </section>
+            <section aria-label="assign-role-notification-section" class="assign-role-notification-section">
+                <h2>APPROVED BOOKING NOTIFICATIONS</h2>
+                <ul class="notification-list" id="notification-approved-list">
+            
+                </ul>
+            </section>
+            <section aria-label="assign-role-notification-section" class="assign-role-notification-section">
+                <h2>REPORTS NOTIFICATIONS</h2>
+                <ul class="notification-list" id="notification-reports-list">
+            
+                </ul>
+            </section>
+           
+        </main>
+    </body>
+</html>
